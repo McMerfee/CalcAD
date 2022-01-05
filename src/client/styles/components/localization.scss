@@ -1,0 +1,75 @@
+.localization {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 16px;
+  background: transparent;
+
+  &--icon {
+    width: 16px;
+    height: 18px;
+  }
+
+  &--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-primary-blue;
+    padding: 0;
+    margin-left: 8px;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.selected {
+      font-weight: bold;
+    }
+  }
+
+  &--mobile {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+    padding: 20px 30px 32px;
+
+    &--icon {
+      width: 22px;
+    }
+
+    img {
+      margin-right: 7px;
+    }
+
+    &--btn {
+      color: $color-white;
+      background: transparent;
+      border: none;
+      outline: none;
+      width: 45px;
+      height: 20px;
+      font-size: 17.5px;
+
+      span {
+        width: 45px;
+        height: 20px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.selected {
+        font-weight: bold;
+      }
+    }
+  }
+}

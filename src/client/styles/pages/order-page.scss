@@ -1,0 +1,114 @@
+.order-page {
+  background: $background-color-light-gray;
+  width: 100%;
+  height: auto;
+
+  .page--main {
+    background: $background-color-light-gray;
+    padding: 0px;
+
+    &-inner {
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .order-container {
+    display: flex;
+    margin-top: 15px;
+
+    &--text {
+      font-family: $font-family-main;
+      padding: 0px 25px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &--subheader {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 0px 25px;
+
+      button {
+        width: auto;
+        max-width: 230px;
+        margin-bottom: 14px;
+        text-align: left;
+
+        span {
+          font-size: 18px;
+          line-height: 20px;
+          width: 100%;
+        }
+      }
+    }
+
+    &--title {
+      font-size: 28px;
+      line-height: 32px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    &--date {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  .sticky-menu,
+  .scrolling-container {
+    button.rectangle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      padding: 5px 10px;
+      background: rgba(255, 255, 255, 0.08);
+      opacity: 1;
+      cursor: pointer;
+      height: 28px;
+
+      svg {
+        fill: #FFFFFF;
+
+        path {
+          fill: #FFFFFF;
+        }
+      }
+
+      .button-label {
+        font-family: $font-family-main;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-self: center;
+        margin-bottom: 2px;
+      }
+    }
+
+    .tab-content--title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .order-page {
+    .tab-content--title-wrapper {
+      height: 36px;
+    }
+  }
+}

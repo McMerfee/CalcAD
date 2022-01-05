@@ -1,0 +1,115 @@
+.tfa {
+  background: $color-white;
+
+  .page--main {
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      padding: 140px 0 0;
+      background: #F2F3F4;
+
+      .title-wrapper {
+        width: 100%;
+        height: 124px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        max-width: 550px;
+
+        .title {
+          font-family: $font-family-main;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 32px;
+          margin-top: 0;
+          margin-bottom: 12px;
+          padding: 0 24px;
+        }
+
+        .link {
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.2px;
+          padding: 0 24px;
+        }
+
+        .label {
+          font-family: $font-family-main;
+          font-style: normal;
+          font-weight: normal;
+          text-align: center;
+          letter-spacing: 0.2px;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+
+      .content-wrapper {
+        max-width: 550px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        background: $color-white;
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 25px;
+        flex: 1 1 auto;
+
+        &-inner {
+          padding: 40px 24px 0 24px;
+          height: 100%;
+
+          .input--wrapper {
+            padding-bottom: 10px;
+
+            button,
+            input {
+              width: 100%;
+            }
+          }
+
+          .button.rounded {
+            width: 100%;
+            margin-top: 20px;
+          }
+
+          .sm-bottom-text {
+            margin-top: 26px;
+            display: flex;
+            justify-content: center;
+
+            button {
+              text-decoration-line: none;
+
+              span {
+                font-family: $font-family-main;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+                color: #8D95A8;
+              }
+            }
+          }
+
+          .sm-bottom-link {
+            margin-top: 21px;
+            display: flex;
+            justify-content: center;
+
+            span {
+              font-size: 12px;
+              line-height: 12px;
+              letter-spacing: 0.2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

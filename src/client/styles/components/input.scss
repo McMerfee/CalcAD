@@ -1,0 +1,85 @@
+.input {
+  border: 1px solid $color-lightsteelblue;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 46px;
+  font-family: $font-family-main;
+  font-size: 16px;
+  line-height: 16px;
+  outline: none;
+  padding: 12px;
+
+  &--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-inner {
+      display: flex;
+      position: relative;
+      width: 100%;
+    }
+
+    .icon-at-right {
+      position: absolute;
+      right: 0;
+      padding: 18px;
+      height: 16px;
+      width: 16px;
+      display: block;
+
+      &.password {
+        content: url("/src/client/assets/icons/password-eye.svg");
+        height: 11px;
+        width: 16px;
+      }
+
+      &.active {
+        filter: brightness(0.6);
+      }
+    }
+  }
+
+  &--label {
+    font-size: 16px;
+    line-height: 16px;
+    font-family: $font-family-main;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+
+  &--error {
+    color: $color-coral;
+    font-size: 10px;
+    line-height: 10px;
+    font-family: $font-family-main;
+    margin-top: 9px;
+  }
+
+  &.small {
+    width: 104px;
+    height: 42px;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: $font-family-main;
+    font-weight: 600;
+    color: $color-primary-dark;
+
+    &::placeholder {
+      color: $color-slategray;
+    }
+  }
+
+  &:focus {
+    border: 1px solid $color-primary-blue;
+  }
+
+  &.invalid {
+    border: 1px solid $color-coral;
+  }
+
+  &:disabled {
+    background-color: $background-color-light-gray;
+    cursor: not-allowed;
+  }
+}

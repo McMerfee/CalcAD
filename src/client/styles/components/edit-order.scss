@@ -1,0 +1,156 @@
+.edit-order {
+  &--header {
+    width: 100%;
+    height: 38px;
+    background-color: $color-primary-light-blue;
+    display: flex;
+
+    &-inner {
+      padding: 0 20px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .header-title {
+        margin-right: 12px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 22px;
+        font-family: $font-family-main;
+      }
+    }
+  }
+
+  &--wrapper {
+    padding-bottom: 70px;
+  }
+
+  &--separator {
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid $color-lightsteelblue;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  &--section-wrapper {
+    height: auto;
+    margin: 10px 0;
+  }
+
+  &--section-name {
+    font-family: $font-family-main;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 15px;
+  }
+
+  &--block {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &--block-row {
+    display: flex;
+    align-items: baseline;
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+
+  &--block-column {
+    &:first-child {
+      width: 195px;
+      margin-right: 6px;
+    }
+
+    &:last-child {
+      width: 140px;
+      margin-right: 10px;
+    }
+
+    .label--wrapper {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 0;
+      margin-top: 0;
+      height: auto;
+
+      label, .label {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        white-space: normal;
+      }
+    }
+
+    .label--wrapper.value {
+      .label, label {
+        font-weight: normal;
+        display: flex;
+      }
+    }
+  }
+
+  &--trigger-wrapper {
+    background-color: $color-primary-blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 38px;
+
+    p {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 22px;
+      margin-left: 25px;
+    }
+
+    img {
+      margin-left: 0;
+      margin-right: 25px;
+    }
+
+    .trigger-text {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: 25px;
+      text-transform: uppercase;
+      color: $color-white;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 16px;
+
+      button {
+        margin-left: 16px;
+
+        &.disabled {
+          display: none;
+        }
+      }
+    }
+
+    &.disabled {
+      background-color: $background-color-light-gray;
+      cursor: not-allowed;
+    }
+  }
+
+  &--main-params {
+    margin-bottom: 10px;
+  }
+
+  .Collapsible__contentInner {
+    margin-bottom: 20px;
+    height: auto;
+  }
+}

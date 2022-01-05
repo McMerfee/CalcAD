@@ -1,0 +1,80 @@
+.modal.full-size,
+.zoom-visualisation-modal {
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  font-family: $font-family-main;
+  background: #F2F2F2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 8000;
+
+  .modal-wrapper {
+    position: relative;
+    border-radius: 0px;
+    max-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .modal-close,
+  .modal-wrapper,
+  .modal-inner-children,
+  .konva-visualisation {
+    background-color: $background-color-light-gray;
+  }
+
+  .konva-visualisation,
+  .konva-visualisation--inner {
+    height: 100%;
+  }
+
+  // .konva-visualisation--inner {
+  //   justify-content: flex-start;
+  // }
+
+  .modal-inner-children {
+    height: 85% !important;
+    // width: 100% !important;
+    width: 85% !important;
+    // padding: 50px 0px;
+    padding: 50px;
+  }
+
+  .konvajs-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  canvas {
+    top: 5%;
+  }
+
+  .modal-close-button-cross:before,
+  .modal-close-button-cross:after {
+    background-color: $color-primary-blue;
+  }
+}
+
+.modal.full-size.zoom-visualisation-modal.open {
+  .modal-close-button {
+    margin: 18px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .modal-close-button-cross {
+    background: $color-white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+  }
+}

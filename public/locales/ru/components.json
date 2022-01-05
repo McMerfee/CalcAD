@@ -1,0 +1,510 @@
+{
+  "routes": {
+    "sign-in": "Вход в систему",
+    "sign-in-admin": "Админ вход в систему",
+    "sign-up": "Регистрация",
+    "tfa": "Авторизация",
+    "system-choice": "Конструктор Заказов",
+    "extendable-system": "Раздвижная Система",
+    "monorail-system": "Монорельс",
+    "opening-system": "Открывающаяся Система",
+    "assembling-system": "Сборочная Система",
+    "hinged-system": "Навесная Система",
+    "page-not-found": "Страница не найдена",
+    "upload-json": "Админ страница",
+    "order": "Заказ",
+    "reset-password": "Восстановить пароль",
+    "profile": "Личный кабинет",
+    "order-accepted": "Заказ оформлен",
+    "my-orders": "Мои заказы",
+    "saved-orders": "Сохраненные проекты"
+  },
+  "errorMessages": {
+    "empty-value": "Пустое значение",
+    "invalid-value": "Некорректное значение",
+    "invalid-email": "Некорректная электронная почта",
+    "invalid-name": "Ожидается от 2 до 30 букв",
+    "invalid-address": "Ожидается от 6 до 40 сиволов",
+    "invalid-phone-number": "Ожидается номер в формате 0YYXXXXXXX",
+    "invalid-password": "Ожидается пароль от 6 до 30 символов",
+    "password-doesnt-match": "Пароль не совпадает",
+    "file-is-too-large": "Файл слишком большой",
+    "please-compress-file": "Пожалуйста, сделайте .zip архив",
+    "failed-uploading-file": "Ошибка загрузки файла",
+    "filling-is-missing": "Выберите материалы наполнения, пожалуйста",
+    "something-went-wrong": "Извините, что-то пошло не так. Пожалуйста, повторите попытку позже."
+  },
+  "successMessages": {
+    "file-uploaded-successfully": "Данные успешно загружены",
+    "data-updated-successfully": "Данные успешно сохранены",
+    "section-merged-successfully": "Секция успешно удалена",
+    "section-copied-successfully": "Секция успешно скопирована"
+  },
+  "warningMessages": {
+    "please-disable-popup-blocker": "Пожалуйста, отключите блокировщик всплывающих окон",
+    "please-add-filling-materials": "Пожалуйста, выберите материалы наполнения",
+    "price-has-changed": "Предыдущая цена: {{prevPrice}} грн. Актуальная цена: {{currentPrice}} грн."
+  },
+  "errorMessagesHelper": {
+    "USER_NOT_FOUND": "Пользователь не найден",
+    "USER_ALREADY_EXISTS": "Пользователь уже существует",
+    "INVALID_JSON_DATA": "Некоректные данные JSON файла",
+    "FILE_NOT_FOUND": "Файл не найден",
+    "PERMISSION_DENIED": "Доступ запрещен",
+    "INVALID_TOKEN": "Некоректный токен",
+    "ZIP_NOT_FOUND": "ZIP не найден",
+    "ERROR_UPDATING_ORDER": "Ошибка при обновлнении заказа",
+    "ERROR_REMOVING_ORDER": "Помилка видалення замовлення",
+    "COPY_ORDER_FAILURE": "Ошибка при копировании заказа",
+    "PUT_INTO_WORK_FAILURE": "Ошибка при подтверждении заказа",
+    "ORDER_NOT_FOUND": "Заказ не найден",
+    "BAD_REQUEST": "Неправильный запрос",
+    "INCORRECT_LOGIN_OR_PASSWORD": "Некорректный логин или пароль",
+    "INCORRECT_PASSWORD": "Некорректный пароль",
+    "VERIFICATION_CODE_IS_INVALID": "Код подтверждения не валидный"
+  },
+  "header": {
+    "profile": "Личный кабинет",
+    "configurator": "Конструктор заказов",
+    "orders": "Мои заказы",
+    "saved-orders": "Сохраненные проекты",
+    "data-editing": "Редактирования данных",
+    "json-uploading": "Админ страница"
+  },
+  "extendableSystem": {
+    "basic": "ОСНОВНЫЕ",
+    "door-n": "ДВЕРЬ {{number}}"
+  },
+  "monorailSystem": {
+    "basic": "ОСНОВНЫЕ",
+    "door-n": "ДВЕРЬ {{number}}"
+  },
+  "openingSystem": {
+    "basic": "ОСНОВНЫЕ",
+    "door-n": "ДВЕРЬ {{number}}"
+  },
+  "assemblingSystem": {
+    "basic": "ОСНОВНЫЕ",
+    "door-n": "ДВЕРЬ {{number}}"
+  },
+  "hingedSystem": {
+    "basic": "ОСНОВНЫЕ",
+    "door-n": "ДВЕРЬ {{number}}"
+  },
+  "copyDoorModal": {
+    "door-n": "Дверь {{number}} -",
+    "apply-to": "Применить к",
+    "door": "ДВЕРЬ",
+    "copy": "Копировать",
+    "copy-settings": "скопировать настройки:",
+    "cancel": "Отмена",
+    "apply": "Применить"
+  },
+  "fillingMaterialsModal": {
+    "customers": "Материал заказчика",
+    "dsp": "ДСП",
+    "mirror": "Зеркало",
+    "lacobel": "Лакобель",
+    "glass": "Стекло",
+    "filling-choice": "Выбор наполнения",
+    "milling": "Фрезерование",
+    "choose-manufacturer": "Выбрать производителя",
+    "uv-print": "Ультрафиолетовая печать",
+    "choose-type": "Выбрать тип",
+    "search-by-name-or-article": "Поиск по названию или артикулу",
+    "stencil-matting": "Матирование по трафарету",
+    "rear-matting": "Тыльное матирование",
+    "full-matting": "Полное матирование",
+    "stencil-painting": "Покраска по трафарету",
+    "choose": "Выбрать",
+    "armored-film": "Бронь пленка",
+    "white-lamination": "Ламинирование белой пленкой",
+    "painting-in-one-colors": "Окрашивание в один цвет",
+    "painting-in-two-colors": "Покраска в два цвета по трафарету",
+    "photo-print-on-cover": "Фотопечать на пленке",
+    "main-filling": "Для всей системы",
+    "door-n": "Дверь {{doorNumber}}",
+    "section-n": "Секция {{doorNumber}}.{{sectionNumber}}",
+    "clear-filling": "Очистить наполнение"
+  },
+  "mergeSectionModal": {
+    "copy": "Удалить секцию",
+    "merge-section": "Объединить секцию:",
+    "cancel": "Отмена",
+    "delete": "Удалить"
+  },
+  "deleteDoorModal": {
+    "title": "Удалить дверь №{{doorNumber}}?",
+    "subtitle": "Дверь будет удалена",
+    "cancel": "Отменить",
+    "submit": "Удалиль"
+  },
+  "deleteSectionModal": {
+    "title": "Удалить секцию №{{sectionNumber}}?",
+    "subtitle": "Секция будет удалена",
+    "cancel": "Отменить",
+    "submit": "Удалиль"
+  },
+  "copySectionModal": {
+    "section-n": "Секция {{doorNumber}}.{{sectionNumber}} -",
+    "apply-to": "Применить к",
+    "section": "СЕКЦИЯ",
+    "copy": "Копировать",
+    "copy-settings": "скопировать настройки:",
+    "cancel": "Отмена",
+    "apply": "Применить"
+  },
+  "putOrderIntoWorkModal": {
+    "title": "Отдать в работу проект №{{orderNumber}}?",
+    "subtitle": "Менеджер получит заказ и свяжется с вами в ближайшее время.",
+    "delivery-type": "Тип доставки",
+    "city-label": "Город",
+    "city-search": "Поиск города доставки",
+    "office-label": "Отделение",
+    "office-search": "Поиск отделений самовывоза",
+    "address-label": "Адрес",
+    "address-placeholder": "Напишите адрес доставки",
+    "comment-label": "Комментарий",
+    "comment-placeholder": "При необходимости оставьте комментарий для менеджера",
+    "cancel": "Отменить",
+    "submit": "Завершить"
+  },
+  "saveOrderModal": {
+    "general": {
+      "placeholder": "Название проекта (Не обязательно)",
+      "cancel": "Отменить"
+    },
+    "mobile": {
+      "title": "Сохранить",
+      "subtitle": "Добавьте название проекта",
+      "submit": "Сохранить"
+    },
+    "desktop": {
+      "title": "Введите, пожалуйста, название проекта или имя клиента",
+      "submit": "Сохранить проект"
+    }
+  },
+  "leavePageModal": {
+    "title": "Хотите сохранить изменения?",
+    "subtitle": "Пожалуйста, сохраните изменения прежде чем покидать страницу.",
+    "order-title": "Название проекта",
+    "cancel": "Отменить",
+    "do-not-save": "Не сохранять",
+    "submit": "Сохранить"
+  },
+  "deleteOrderModal": {
+    "title": "Удалить заказ №{{orderNumber}}?",
+    "subtitle": "Заказ будет удален из Сохранненых проектов",
+    "cancel": "Отменить",
+    "submit": "Удалиль"
+  },
+  "copyOrderModal": {
+    "title": "Скопировать заказ №{{orderNumber}}?",
+    "subtitle": "Заказ будет скопирован в Сохранненые проекты.",
+    "order-title": "Введите пожалуйста название проекта или имя клиента.",
+    "order-title-placeholder": "Название проекта",
+    "cancel": "Отменить",
+    "submit": "Копировать"
+  },
+  "stickyMenu": {
+    "footer": {
+      "process": "Продолжить",
+      "save": "Сохранить"
+    },
+    "bottomNavPanel": {
+      "door-n": "Дверь {{number}}",
+      "save-project": "Сохранить проект"
+    },
+    "desktop": {
+      "main-params": "Основные параметры",
+      "filling": "Выбор наполнения"
+    },
+    "door": {
+      "door": "Дверь ",
+      "copy": "Копировать"
+    },
+    "mainDoorTab": {
+      "aperture-height": "Высота проема, мм",
+      "from-min-to-max": "(от {{min}} до {{max}})",
+      "min-or-max": "({{min}} или {{max}})",
+      "aperture-width": "Ширина проема, мм",
+      "monorail-door-width": "Ширина двери, мм",
+      "sidewall-thickness": "Толщина боковины, мм",
+      "x2Profile": "Ходовой профиль",
+      "x4Profile": "Направляющий профиль",
+      "number-of-doors": "Количество дверей",
+      "amount": "(от {{minDoorsAmount}} до {{maxDoorsAmount}})",
+      "door-layout": "Схема размещения дверей",
+      "side-profile": "Боковой профиль",
+      "choose-profile": "Выбрать профиль",
+      "aluminum-profile-color": "Цвет алюминиевого профиля",
+      "mechanism": "Механизм",
+      "choose-mechanism": "Выбрать механизм",
+      "stopper": "Стопор",
+      "opening-side": "Сторона открывания",
+      "filling-material": "Материал наполнения",
+      "texture": "Текстура",
+      "middle-door-mechanism": "Доводчик на средние двери",
+      "no-available-aluminum-profiles": "Нет доступных алюминиевых профилей"
+    },
+    "mainSectionTab": {
+      "door-latch-mechanism": "Доводчик двери",
+      "filling-material": "Материал наполнения",
+      "number-of-sections": "Количество секций",
+      "amount": "(от {{minSectionsAmount}} до {{maxSectionsAmount}})",
+      "sectioning-direction": "Направление разделения на секции",
+      "connecting-profile": "Соединительный профиль",
+      "choose-profile": "Выбрать профиль",
+      "door-assembly": "Сборка двери"
+    },
+    "section": {
+      "section": "Секция ",
+      "visible-height": "Видимая высота, мм",
+      "align-height": "Выровнять по высоте",
+      "visible-width": "Видимая ширина, мм",
+      "align-width": "Выровнять по ширине",
+      "filling-material": "Материал наполнения"
+    },
+    "sectionSwitcher": {
+      "main": "Основная",
+      "add-section": "Добавить секцию"
+    }
+  },
+  "fillingMaterialsControl": {
+    "choose": "Выбрать",
+    "change": "Изменить"
+  },
+  "signIn": {
+    "password": "Пароль",
+    "sign-in": "Вход",
+    "sign-in-admin": "Админ вход",
+    "to-sign-in": "Войти",
+    "phone": "Телефон",
+    "phone-number-format": "0YYXXXXXXX",
+    "email": "Электронная почта",
+    "no-account": "Нет аккаунта?",
+    "sign-up": "Зарегистрироваться",
+    "forgot-password": "Забыли пароль?",
+    "reset-password": "Восстановить пароль"
+  },
+  "signUp": {
+    "title": "Зарегистрироваться",
+    "sign-up": "Сохранить",
+    "to-sign-in": "Войти",
+    "proceed": "Продолжить",
+    "already-have-account": "Уже зарегистрированы?",
+    "first-name": "Ваше имя",
+    "last-name": "Фамилия",
+    "region": "Регион",
+    "phone": "Телефон",
+    "phone-number-format": "0YYXXXXXXX",
+    "password": "Пароль",
+    "repeat-password": "Повторить пароль",
+    "by-clicking-you-accept-the-terms": "Нажимая кнопку «Зарегистрироваться», Вы принимаете условия ",
+    "of-user-agreement": "Пользовательского соглашения."
+  },
+  "forgotPassword": {
+    "repeat-password": "Повторить пароль",
+    "phone": "Телефон",
+    "send-code": "Отправить код",
+    "submit": "Подтвердить",
+    "phone-number-format": "0YYXXXXXXX",
+    "code": "Код СМС cообщения",
+    "setup-password": "Восстановление пароля",
+    "successfully-reset-password": "Пароль успешно восстановлен",
+    "password": "Пароль",
+    "code-has-been-sent": "На номер: {{phoneNumber}} отправлен код"
+  },
+  "tfa": {
+    "auth": "Авторизация",
+    "hint-section": "На ваш номер отправлено сообщение с кодом, пожалуйста введите его в поле ниже",
+    "confirm": "Подтвердить",
+    "code": "Код СМС cообщения",
+    "send-confirmation-again": "Отправить код еще раз?",
+    "go-to-registration": "Вернуться к регистрации"
+  },
+  "jsonForm": {
+    "orders-info": "Информация о заказах",
+    "orders-count-total": "Общее количество заказов",
+    "orders-count-new": "Количество новых проектов",
+    "orders-count-in-processing": "Количество заказов, отданных в работу",
+    "users-count-with-new-orders": "Количество пользователей, которые сохранили проекты",
+    "users-count-with-in-processing-orders": "Количество пользователей, которые отправили заказы в работу",
+    "upload-json-files": "Загрузка JSON файлов",
+    "1с-orders-exchange": "Обмен заказами с 1С",
+    "1с-orders-exchange-raw": "Выгрузка расширенных данных по заказам",
+    "1с-orders-set-exchanged": "Установка пометки успешного обмена заказами",
+    "1с-system-constants-exchange": "Обмен коэффициентов с 1С",
+    "1с-delivery-exchange": "Обмен типами доставки с 1С",
+    "file-with-items-list-and-price-list": "Файл с номенклатурой и ценами",
+    "compress-huge-file": "Если файл более 20МБ, заархивируйте его в .zip архив",
+    "file-with-customers": "Файл с контрагентами",
+    "submit": "Применить",
+    "clear": "Очистить",
+    "uploaded": "Загружено",
+    "invalid-phone-numbers": "Не прошли валидацию по тел. номеру",
+    "nonunique-phone-numbers": "Не уникальные номера телефонов",
+    "file-path": "ПУТЬ_К_ФАЙЛУ",
+    "instruction-to-upload-json": "Для загрузки JSON файлов скопируйте строку запроса, заменив ПУТЬ_К_ФАЙЛУ, вставьте в командную строку и нажмите Enter",
+    "instruction-to-upload-items-list-zip": "Для загрузки ZIP файла с номенклатурой скопируйте следующую строку, заменив ПУТЬ_К_ФАЙЛУ, вставьте в командную строку и нажмите Enter",
+    "instruction-to-load-orders-by-region": "Для выгрузки заказов, отданных в работу, скопируйте строку на выбор в зависимости от региона, вставьте в командную строку и нажмите Enter",
+    "example": "Пример"
+  },
+  "regions": {
+    "lviv": "Львов",
+    "kyiv": "Киев",
+    "kharkiv": "Харьков",
+    "odesa": "Одесса"
+  },
+  "profile": {
+    "greeting": "Здравствуйте",
+    "contact-info": "Контактная информация",
+    "first-name": "Имя: ",
+    "last-name": "Фамилия: ",
+    "phone": "Телефон: ",
+    "phone-number-format": "0YYXXXXXXX",
+    "edit": "Редактировать",
+    "cancel": "Отменить",
+    "submit": "Сохранить",
+    "delivery-by-default": "Доставка по умолчанию"
+  },
+  "systemsChoise": {
+    "choose-one-of": "Выберите один из вариантов системы",
+    "extendable": "Раздвижная",
+    "opening": "Открывающаяся",
+    "suspended": "Подвесная",
+    "assembling": "Сборочная",
+    "monorail": "Монорельс",
+    "hinged": "Навесная",
+    "frame-facades": "Рамковые фасады"
+  },
+  "editOrder": {
+    "project": "Проект",
+    "new-order": "Новый Проект",
+    "download-specification": "Загрузить спецификацию",
+    "specification": "Спецификация",
+    "show-visualisation": "Посмотреть визуализацию",
+    "please-check-params": "Проверьте характеристики перед заказом",
+    "confirm": "Оформить",
+    "cost": "Стоимость",
+    "basic": "Основные",
+    "door-n": "Дверь {{number}}",
+    "section-n": "Секция {{doorNumber}}.{{sectionNumber}}",
+    "extendable": "Раздвижная",
+    "system-type": "Тип системи",
+    "door-opening-height": "Высота проема",
+    "door-opening-width": "Ширина проема",
+    "door-height": "Высота дверей",
+    "door-width": "Ширина дверей",
+    "filling-size": "Размер наполнения",
+    "visible-filling-size": "Видимый размер наполнения",
+    "door-amount": "Количество дверей",
+    "door-positioning-scheme": "Схема размещения",
+    "side-profile": "Боковой профиль",
+    "profile-color": "Цвет профиля",
+    "mechanism": "Механизм",
+    "stopper": "Стопор",
+    "sidewall-thickness": "Толщина боковины",
+    "opening-side": "Сторона открывания",
+    "door-latch-mechanism": "Доводчик двери",
+    "door-latch-mechanism-position": "Расположение доводчика",
+    "connecting-profile": "Соеденит. профиль",
+    "connecting-profile-color": "Цвет соеденит. профиля",
+    "sections-direction": "Направление секций",
+    "section-height": "Высота секции",
+    "section-width": "Ширина секции",
+    "section-filling": "Материал",
+    "section-texture": "Текстура",
+    "choose-region": "Выбрать регион"
+  },
+  "landing": {
+    "title": "ADS - там где стекло и алюминий",
+    "advantages": "Преимущества конструктора",
+    "advantage-1": "самостоятельный, быстрый просчет заказов в любое удобное время",
+    "advantage-2": "возможность сохранить просчет заказа",
+    "advantage-3": "экономия Вашего рабочего времени",
+    "advantage-4": "просмотр истории заказов",
+    "advantage-5": "отслеживания новинок от компании «ADS»",
+    "start": "Начать",
+    "sign-up": "Зарегистрироваться",
+    "sign-in": "Войти",
+    "logout": "Выйти"
+  },
+  "orderAccepted": {
+    "your-order-number": "Ваш заказ №{{orderNumber}}",
+    "accepted": "оформлен",
+    "manager-received-order": "Менеджер получил заказ и свяжется с вами в ближайшее время.",
+    "new-order": "Новый заказ",
+    "view": "Посмотреть",
+    "my-orders": "Мои заказы"
+  },
+  "myAcceptedOrders": {
+    "my-orders": "Мои заказы",
+    "order": "Заказ",
+    "client": "Клиент",
+    "system-type": "Тип системы",
+    "date": "Дата",
+    "retail": "Розница",
+    "saving": "Экономия",
+    "sum": "Со скидкой",
+    "status": "Статус",
+    "actions": "Действия",
+    "put-into-work": "Отдано в работу",
+    "view": "Посмотреть",
+    "no-orders": "Нет заказов",
+    "loading": "Загрузка..."
+  },
+  "mySavedOrders": {
+    "saved-orders": "Сохраненные проекты",
+    "order": "Проект",
+    "client": "Клиент/Название",
+    "system-type": "Тип системы",
+    "date": "Дата",
+    "retail": "Розница",
+    "saving": "Экономия",
+    "sum": "Со скидкой",
+    "put-into-work": "Отдать в работу",
+    "no-orders": "Нет сохраненных проектов",
+    "loading": "Загрузка..."
+  },
+  "table": {
+    "no-data": "Нет данных",
+    "copy-project": "Копировать проект",
+    "rename-project": "Изменить название проекта",
+    "delete-project": "Удалить проект",
+    "edit-project": "Редактировать проект",
+    "open-specification": "Открыть спецификацию"
+  },
+  "breadcrumbs": {
+    "system-type": "Тип системы",
+    "extendable": "Раздвижная Система",
+    "monorail": "Монорельс",
+    "opening": "Открывающаяся Система",
+    "assembling": "Сборочная Система",
+    "hinged": "Навесная Система",
+    "order-process": "Просмотр проекта"
+  },
+  "tooltips": {
+    "door-layout": "Шахматное или симметричное расположение дверей (влияет на ширину двери)",
+    "side-profile": "Боковая ручка в двери для шкафа-купе",
+    "aluminum-profile-color": "Гамма цветов, используемых для изделий",
+    "mechanism": "Ролики (верхние и нижние)",
+    "filling-material": "Стекло - 4 мм; ДСП - 10 мм",
+    "door-latch-mechanism": "Это механизм, осуществляющий плавное закрывание дверей",
+    "texture": "Направление расположения древовидных волокон",
+    "connecting-profile": "Алюминиевый профиль, служит соединением двух частей наполнения",
+    "door-assembly": "Осуществления / неосуществление сбора дверей"
+  },
+  "ordersStatuses": {
+    "new": "Сохранено",
+    "in-processing": "В обработке",
+    "processed-and-available-for-payment": "Обработано, доступно для оплаты",
+    "clarification-of-order-parameters": "Уточнение с менеджером параметров заказа",
+    "clarification-of-order-components": "Уточнение с менеджером комплектующих",
+    "launched-in-work": "Запущено в работу",
+    "manufactured-in-lviv": "Заказ изготовлено (Производство г. Львов)",
+    "available-at-the-delivery-point": "Доступен в точке выдачи",
+    "dispatched": "Отгружено",
+    "declined": "Заказ отменен"
+  }
+}

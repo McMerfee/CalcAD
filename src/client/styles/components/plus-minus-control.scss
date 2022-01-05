@@ -1,0 +1,32 @@
+.plus-minus-control {
+  display: flex;
+  align-items: center;
+}
+
+.minus-control {
+  background-image: url('/src/client/assets/icons/minus-control.svg');
+  background-color: transparent;
+  border: none;
+  width: 28px;
+  height: 28px;
+  outline: none;
+  cursor: pointer;
+}
+
+.plus-minus-control-amount {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  color: $color-slategray;
+  margin: 0 20px;
+}
+
+.plus-control {
+  background-image: url('/src/client/assets/icons/plus-control.svg');
+  background-color: transparent;
+  border: none;
+  width: 28px;
+  height: 28px;
+  outline: none;
+  cursor: pointer;
+}

@@ -1,0 +1,527 @@
+.action-modal {
+  .modal-wrapper {
+    min-height: 380px;
+  }
+
+  .modal-inner-children {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    min-height: 380px;
+  }
+
+  .headings-h2 {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px;
+    line-height: 30px;
+  }
+
+  .content-wrapper {
+    padding-bottom: 20px;
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $color-white !important;
+
+    &-inner {
+      width: 70%;
+      text-align: center;
+      font-family: $font-family-main;
+      font-style: 400;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      color: $color-primary-dark;
+
+      span {
+        width: 100%;
+      }
+    }
+  }
+
+  .region-select-wrapper {
+    width: 80%;
+
+    .label--wrapper {
+      width: 100%;
+    }
+
+    .react-selectize.bootstrap3.root-node.simple-select {
+      width: 100%;
+    }
+  }
+
+  .input--wrapper {
+    width: 70%;
+
+    .input--wrapper-inner {
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  .modal-order-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 114px;
+    height: 30%;
+
+    .modal-order-icon {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+
+      svg {
+        margin-top: 5%;
+      }
+    }
+
+    .modal-order-icon > div {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .modal-close {
+    position: absolute;
+    border-radius: 24px;
+    background-color: transparent;
+  }
+
+  p {
+    font-family: $font-family-main;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: $color-primary-dark;
+  }
+
+  .checkmark {
+    width: 24px;
+    height: 24px;
+    background: $color-white;
+    border: 1px solid $color-lightsteelblue;
+  }
+
+  label {
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-primary-dark;
+    margin-bottom: 10px;
+  }
+
+  .action-buttons {
+    width: 100%;
+    border-top: 1px solid #D3D3D3;
+    height: 90px;
+
+    &-inner {
+      padding: 18px 0px 24px 0px;
+      display: flex;
+      justify-content: space-around;
+
+      .link-button {
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        outline: none;
+
+        span {
+          color: #8D95A8;
+          font-family: $font-family-main;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+
+      .blue-button {
+        background: $color-primary-blue;
+        border-radius: 36px;
+        padding: 13px 24px;
+        display: flex;
+        align-items: center;
+        border: none;
+        outline: none;
+
+        span {
+          color: $color-white;
+          font-family: $font-family-main;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 20px;
+        }
+
+        &:disabled {
+          background: $color-silver;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  .modal-warning {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+
+    span {
+      color: $color-coral;
+      font-family: $font-family-main;
+      font-style: 400;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+    }
+
+    svg {
+      fill: $color-coral;
+      margin-top: 3px;
+
+      path {
+        fill: $color-coral;
+      }
+    }
+
+    &-icon {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.action-modal.order-title {
+  height: 100%;
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  input {
+    font-size: 14px;
+
+    &::placeholder {
+      color: $color-placeholder-gray;
+      font-size: 12px;
+    }
+  }
+
+  .modal-wrapper {
+    min-height: 380px;
+    height: 366px;
+  }
+}
+
+
+.action-modal.put-into-work {
+  height: 100%;
+
+  .modal-wrapper {
+    .headings-h2 {
+      line-height: 30px !important;
+      padding: 10px 20px 10px 20px !important;
+    }
+
+    .content-subtitle {
+      align-items: center;
+      text-align: center;
+      margin-bottom: 0;
+      padding: 0px 20px;
+    }
+
+    .content-wrapper {
+      overflow-y: auto;
+      margin-bottom: 10px;
+      margin-left: 8px;
+
+      /* Scroll styles: start */
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: linear-gradient(13deg, $color-dark-blue 14%, $color-primary-blue 64%);
+        border-radius: 11px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(13deg, $color-primary-blue 14%, $color-dark-blue 64%);
+      }
+
+      &::-webkit-scrollbar-track {
+        background: $color-white;
+        border-radius: 11px;
+        box-shadow: inset 7px 10px 12px $color-box-shadow;
+      }
+      /* Scroll styles: end */
+
+      &-inner {
+        width: 86%;
+        text-align: left;
+        font-size: 15px;
+        line-height: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: 350px;
+
+        input {
+          font-size: 15px;
+
+          &::placeholder {
+            color: $color-placeholder-gray;
+            font-size: 14px;
+          }
+        }
+
+        .input--wrapper {
+          width: 100%;
+        }
+
+        .react-selectize.bootstrap3.root-node.simple-select {
+          width: 100%;
+        }
+
+        .react-selectize-control {
+          .react-selectize-search-field-and-selected-values {
+            input {
+              font-size: 15px;
+            }
+          }
+
+          .react-selectize-placeholder {
+            color: $color-placeholder-gray;
+            font-size: 14px;
+          }
+
+          .dropdown-value-label {
+            font-weight: 400;
+          }
+
+          .react-selectize-reset-button-container {
+            margin-right: 8px;
+          }
+        }
+
+        .react-selectize.bootstrap3.root-node.simple-select.search-glass {
+          .react-selectize-toggle-button-container {
+            display: none;
+          }
+        }
+
+        .label--wrapper > label {
+          font-weight: 500;
+          margin: 0;
+        }
+
+        .delivery-type-wrapper,
+        .city-wrapper,
+        .address-wrapper,
+        .office-wrapper {
+          width: 100%;
+        }
+      }
+    }
+
+    .warning-wrapper {
+      margin-top: 12px;
+
+      span {
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-coral;
+        text-shadow: 0 0 black;
+      }
+    }
+  }
+}
+
+
+.my-orders .action-modal,
+.saved-orders .action-modal {
+  .content-wrapper {
+    height: auto;
+  }
+
+  .content-wrapper-inner {
+    padding: 0px 0px 0px 0px !important;
+    width: 80%;
+  }
+
+  .headings-h2 {
+    line-height: 50px;
+  }
+}
+
+.my-orders .copy-order,
+.saved-orders .copy-order {
+  .headings-h2 {
+    margin-top: 0;
+  }
+
+  .content-wrapper {
+    min-height: 100px;
+  }
+
+  .input--wrapper {
+    margin-top: 20px;
+  }
+}
+
+.action-modal.leave-page {
+  .content-wrapper-inner {
+    flex-direction: column;
+
+    .content, .title-wrapper {
+      width: 100%;
+    }
+
+    .content {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .input--wrapper {
+      width: 100%;
+
+      input: {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.action-modal.delete-door {
+  .modal-wrapper {
+    width: 367px;
+    height: 50%;
+
+    .headings-h2 {
+      line-height: 78px;
+    }
+
+    .content-wrapper {
+      padding-bottom: 40px;
+    }
+
+    .content-wrapper-inner {
+      line-height: 70px;
+    }
+  }
+}
+
+
+@media (max-width:$max-mobile-width) {
+  .action-modal {
+    .modal-order-icon-wrapper {
+      display: none;
+    }
+
+    .modal-inner-children {
+      justify-content: space-between;
+
+      .headings-h2 {
+        padding: 30px 20px 10px 20px;
+        line-height: 24px;
+        font-size: 20px;
+        margin-top: 10%;
+      }
+
+      .content-wrapper-inner {
+        width: 90%;
+      }
+
+      .action-buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        max-height: 92px;
+
+        button {
+          font-size: 15px;
+
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .action-buttons-inner {
+        width: 100%;
+      }
+
+      .react-selectize.bootstrap3.root-node.simple-select {
+        width: 100%;
+      }
+    }
+
+    .modal-warning {
+      span {
+        text-align: left;
+      }
+    }
+  }
+
+  .action-modal.leave-page {
+    .content-wrapper-inner {
+      .title-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media (min-width:$max-mobile-width) {
+  .action-modal.order-title {
+    .modal-wrapper {
+      width: 640px;
+      max-width: 640px;
+      height: 70%;
+      min-height: 380px;
+
+      h2 {
+        font-size: 1.4em;
+      }
+
+      input {
+        font-size: 15px;
+
+        &::placeholder {
+          color: $color-placeholder-gray;
+          font-size: 15px;
+        }
+      }
+
+      .modal-inner-children {
+        justify-content: space-around;
+      }
+    }
+  }
+}

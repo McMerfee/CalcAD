@@ -1,0 +1,48 @@
+.main-wrapper {
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+
+  &--inner {
+    height: 100%;
+  }
+}
+
+.page {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  font-family: $font-family-main;
+
+  &--main {
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+
+    &-inner {
+      position: relative;
+      min-height: 100vh;
+      padding: 48px 0 0;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media (min-width: $max-mobile-width) {
+  .main-wrapper {
+    height: 100%;
+  }
+
+  .page {
+    &--main {
+      &-inner {
+        display: flex;
+        flex-direction: column;
+        padding: 70px 40px 0;
+      }
+    }
+  }
+}

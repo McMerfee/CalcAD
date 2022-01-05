@@ -1,0 +1,23 @@
+.konva-visualisation {
+  width: 100%;
+  background: $background-color-light-gray;
+  font-family: $font-family-main;
+
+  &--inner {
+    min-height: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width:$max-mobile-width) {
+  .konva-visualisation {
+    width: auto;
+    padding-right: 30px;
+
+    &--inner {
+      height: calc(100vh - 210px);
+    }
+  }
+}

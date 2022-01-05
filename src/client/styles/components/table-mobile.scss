@@ -1,0 +1,225 @@
+
+
+.table-mobile {
+  $row-height-collapsed: 88px;
+  $row-height-extended: 152px;
+
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0px !important;
+  font-family: $font-family-main;
+
+  &--row {
+    height: $row-height-collapsed;
+    width: 100%;
+    display: flex;
+    background: $color-white;
+    border-radius: 4px;
+    margin: 8px 0px;
+    outline: none;
+    min-width: 366px;
+  }
+
+  &--row.extended {
+    @extend .table-mobile--row;
+
+    height: $row-height-extended;
+  }
+
+  &--row-hr {
+    height: 2px;
+    border-bottom: 1px solid $border-light-gray;
+    margin: 0px 8px;
+  }
+
+  &--row-inner {
+    width: 100%;
+    height: 100%;
+    outline: none;
+  }
+
+  &--row-content {
+    width: 100%;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0px 10px 0px;
+    outline: none;
+  }
+
+  &--row-empty {
+    height: $row-height-collapsed;
+    background: $color-white;
+    width: 100%;
+    display: flex;
+    border-radius: 4px;
+    margin: 8px 0px;
+    outline: none;
+  }
+
+  &--empty-row-line {
+    height: $row-height-collapsed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 22px;
+    color: $color-darkgray;
+  }
+
+  &--line {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0px 16px;
+
+    &:first-child,
+    &:last-child {
+      justify-content: flex-end;
+    }
+
+    &:nth-child(3) {
+      justify-content: space-between;
+    }
+  }
+
+  &--date {
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 22px;
+    color: $color-gray-8;
+  }
+
+  &--number {
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-primary-blue;
+    margin-right: 12px;
+  }
+
+  &--title {
+    width: 72%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &--system-type {
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 22px;
+    color: $color-darkgray;
+    margin-right: 10px;
+  }
+
+  &--price {
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: $color-gray-8;
+    display: flex;
+    align-items: center;
+  }
+
+  &--price-secondary {
+    font-family: $font-family-main;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: $color-darkgray-2;
+  }
+
+  &--action-buttons-wrapper {
+    height: 60px;
+  }
+
+  &--action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 16px;
+    height: 60px;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background: darken(rgba(58, 132, 227, 0.08), 10%);
+      box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+      border: none;
+      outline: none;
+      margin-left: 16px;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+
+    button.circle {
+      border-radius: 50%;
+      background: $color-white;
+      width: 32px;
+      height: 32px;
+      background: rgba(58, 132, 227, 0.08);
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    button.rectangle {
+      border-radius: 4px;
+      padding: 5px 10px;
+      background: $color-primary-blue;
+      opacity: 1;
+      cursor: pointer;
+      height: 36px;
+
+      svg {
+        fill: #FFFFFF;
+
+        path {
+          fill: #FFFFFF;
+        }
+      }
+
+      .button-label {
+        font-family: $font-family-main;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-self: center;
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+@media (max-width:1022px) {
+  .table-mobile--price {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .table-mobile--date {
+    line-height: 14px;
+  }
+}

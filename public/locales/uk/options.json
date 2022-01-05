@@ -1,0 +1,101 @@
+{
+  "doorPositioningOptions": {
+    "chessboard": "Шахматна",
+    "symmetrical": "Симетрична"
+  },
+  "hingedDoorPositioningOptions": {
+    "left-front": "Ліва попереду",
+    "left-back": "Ліва позаду"
+  },
+  "textures": {
+    "vertical": "Вертикальна",
+    "horizontal": "Горизонтальна"
+  },
+  "stoppers": {
+    "stopor_new": "Верхній",
+    "stop_arc": "Нижній"
+  },
+  "openingSides": {
+    "left": "Ліва",
+    "right": "Права"
+  },
+  "doorLatchMechanismPositionOptions": {
+    "at-right": "Справа",
+    "at-left": "Зліва",
+    "both-sides": "З двох сторін"
+  },
+  "directionOfSectionsOptions": {
+    "horizontal": "Горизонтальний",
+    "vertical": "Вертикальний"
+  },
+  "mergeSectionOptions": {
+    "last": "З нижньою секцією",
+    "first": "З верхньою секцією",
+    "align-all": "Вирівняти секції"
+  },
+  "chipboardUVPrintingTypes": {
+    "print_uv_wcb": "Без білого кольору",
+    "print_uvw_wcb": "З білим кольором",
+    "print_uv_wcb2": "В 2 шари",
+    "print_uv_wcb3": "В 3 шари",
+    "print_uv_wcb4": "В 4 шари",
+    "print_uv_wcb5": "В 5 шарів"
+  },
+  "mirrorUVPrintingTypes": {
+    "print_uv_mir": "Друк кольором",
+    "print_uvw_mir": "Друк білим кольором",
+    "print_uvws_mir": "Друк кольором з білим підкладом"
+  },
+  "lacobelUVPrintingTypes": {
+    "print_uv_mir": "Друк кольором",
+    "print_uvw_mir": "Друк білим кольором",
+    "print_uvws_mir": "Друк кольором з білим підкладом"
+  },
+  "glassUVPrintingTypes": {
+    "print_uv_gl": "Друк кольором",
+    "print_uvw_gl": "Друк білим кольором",
+    "print_uvws_gl": "Друк кольором з білим підкладом",
+    "print_uv2sws_gl": "Друк кольором з білим підкладом (двосторонній друк)",
+    "print_uvbsws_gl": "Друк кольором з білим підкладом з тильної сторони",
+    "print_uvbs_gl": "Друк кольором з тильної сторони"
+  },
+  "glassPhotoPrintingTypes": {
+    "print_lathd": "Фотодрук ЛАТЕКС-HD",
+    "print_lat": "Фотодрук ЛАТЕКС",
+    "print_lateco": "Фотодрук ЛАТЕКС (ЕКО)"
+  },
+  "glassTypes": {
+    "glass_4": "Прозоре",
+    "glass_br": "Бронза",
+    "glass_grap": "Графіт",
+    "glass_sat": "Сатин",
+    "glass_ult": "Ультрапрозоре"
+  },
+  "mirrorTypes": {
+    "mirror_4": "Срібне",
+    "mirror_br": "Бронза",
+    "mirror_grap": "Графіт",
+    "mirror_sat": "Сатин",
+    "mirror_ult": "Ультрапрозоре"
+  },
+  "lacobelTypes": {
+    "lakob_1013": "Лакобель 1013",
+    "lakob_1015": "Лакобель 1015",
+    "lakob_1236": "Лакобель 1236",
+    "lakob_9003": "Лакобель 9003 (Білий на Ультрапрозорому склі)",
+    "lakob_9005": "Лакобель 9005",
+    "lakob_9010": "Лакобель 9010 (Білий на Зеленому склі)"
+  },
+  "sample-hint": "Підказка",
+  "wrong-value": "Невірне значення",
+  "no-data": "Немає даних",
+  "delivery-options": {
+    "self-pickup": "Самовивіз",
+    "transport-agency": "Перевізник",
+    "ads-transport": "Транспорт ADS",
+    "nova-poshta": "Нова Пошта",
+    "cat": "CAT",
+    "delivery": "Делівері",
+    "avtolyuks": "Автолюкс"
+  }
+}

@@ -1,0 +1,146 @@
+.label {
+  &--wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    height: 24px;
+
+    label {
+      font-size: 16px;
+      line-height: 16px;
+      font-family: $font-family-main;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-spacing: 1px;
+      margin-right: 8px;
+    }
+  }
+
+  &--info-tag {
+    background-color: $color-gray-8;
+    opacity: 0.6;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FBFBFB;
+    padding: 6px 10px;
+    line-break: strict;
+    max-width: 130px;
+    display: none;
+    z-index: 3000;
+    text-align: center;
+
+    &.active {
+      display: initial;
+    }
+
+    &-arrow-left {
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-right: 7px solid $color-gray-8;
+      opacity: 0.6;
+      padding-left: 3px;
+      display: none;
+
+      &.active {
+        display: initial;
+      }
+    }
+
+    &-button {
+      width: 20px;
+      height: 18px;
+      background-color: transparent;
+      border: none;
+      margin-left: 10px;
+      margin-right: 5px;
+      outline: none;
+      cursor: pointer;
+      padding: 0;
+
+      span {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &--upload-file {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 2.5rem;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: $font-family-main;
+    width: 100%;
+
+    input {
+      min-width: 14rem;
+      margin: 0;
+      filter: alpha(opacity=0);
+      opacity: 0;
+    }
+
+    .upload-custom {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 5;
+      height: 24px;
+      padding: .5rem 1rem;
+      line-height: 1.5;
+      color: $color-darkgray;
+      background-color: $color-white;
+      border: .075rem solid $border-light-gray;
+      border-radius: .25rem;
+      box-shadow: inset 0 0.2rem 0.4rem rgba(0,0,0,.05);
+      user-select: none;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+      &:before {
+        position: absolute;
+        top: -.075rem;
+        right: -.075rem;
+        bottom: -.075rem;
+        z-index: 6;
+        display: block;
+        content: url("/src/client/assets/icons/fillingMaterials/search-glass.svg");
+        height: 24px;
+        padding: .5rem 1rem;
+        line-height: 1.5;
+        color: $color-primary-dark;
+        background-color: $color-white;
+        border: .075rem solid $border-light-gray;
+        border-radius: 0 .25rem .25rem 0;
+      }
+    }
+  }
+
+  &--error-message {
+    font-size: 14px;
+    line-height: 14px;
+    font-family: $font-family-main;
+    width: 100%;
+    margin: 10px 0px;
+    color: $color-coral;
+  }
+
+  &--secondary {
+    font-size: 14px;
+    line-height: 14px;
+    font-family: $font-family-main;
+    width: 100%;
+    margin: 10px 0px;
+    color: $color-darkgray-2;
+    text-rendering: geometricPrecision;
+  }
+}

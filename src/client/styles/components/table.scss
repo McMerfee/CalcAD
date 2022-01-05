@@ -1,0 +1,404 @@
+.table-responsive-wrapper {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  height: calc(100vh - 184px);
+  overflow-y: auto;
+
+  /* Scroll styles: start */
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, $color-dark-blue 14%, $color-primary-blue 64%);
+    border-radius: 11px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(13deg, $color-primary-blue 14%, $color-dark-blue 64%);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $color-white;
+    border-radius: 11px;
+    box-shadow: inset 7px 10px 12px $color-primary-gray;
+    margin-top: 74px;
+  }
+  /* Scroll styles: end */
+}
+
+.table {
+  $row-height: 64px;
+  $heading-height: 44px;
+
+  width: 100%;
+  height: auto;
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0px !important;
+  font-family: $font-family-main;
+
+  tbody {
+    background-color: #FFFFFF;
+  }
+
+  // Sticky position: https://developer.chrome.com/blog/tablesng/
+  thead {
+    position: sticky;
+    top: 0;
+  }
+
+  thead th {
+    height: $heading-height;
+    vertical-align: middle;
+    border-bottom: 2px solid $color-black;
+    border-collapse: separate;
+    border-spacing: 0px !important;
+
+    &:first-child {
+      padding-left: 20px;
+    }
+
+    &:last-child {
+      .table--heading-inner {
+        padding-right: 20px;
+      }
+    }
+
+    .table--heading-inner {
+      justify-content: center;
+    }
+
+    .table--heading-inner.right {
+      justify-content: flex-end;
+    }
+
+    .table--heading-inner.left {
+      justify-content: flex-start;
+    }
+  }
+
+  th {
+    padding: .75rem;
+    vertical-align: top;
+  }
+
+  td {
+    padding: .75rem;
+    vertical-align: middle;
+  }
+
+  tbody tr {
+    height: $row-height;
+  }
+
+  tbody tr td {
+    padding: .75rem;
+  }
+
+  tbody td, tbody th {
+    border-bottom: 1px solid $border-light-gray;
+  }
+
+  &--heading {
+    background-color: $color-primary-gray;
+
+    &-inner {
+      font-family: $font-family-main;
+      color: $color-gray-8;
+      margin-bottom: 5px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+
+  &--cell {
+    &:first-child {
+      padding-left: 20px;
+    }
+
+    &-inner {
+      font-family: $font-family-main;
+      width: 100%;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      display: flex;
+      justify-content: flex-start;
+      color: $color-gray-8;
+      cursor: default;
+
+      span {
+        cursor: default;
+      }
+
+      a {
+        color: $color-primary-blue;
+        font-family: $font-family-main;
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+        width: auto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+
+        &:hover {
+          color: darken($color-primary-blue, 10%);
+        }
+      }
+
+      .table--action-buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        flex-wrap: wrap-reverse;
+
+        .cirle-buttons-group {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          background: rgba(58, 132, 227, 0.08);
+          border: none;
+          outline: none;
+          margin-left: 12px;
+
+          &:first-child {
+            margin-left: 0px;
+          }
+
+          &:hover {
+            background: darken(rgba(58, 132, 227, 0.08), 10%);
+            box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        button.circle {
+          border-radius: 50%;
+          background: $color-white;
+          width: 32px;
+          height: 32px;
+          color: $color-light-blue;
+          cursor: pointer;
+
+          svg {
+            fill: $color-light-blue;
+
+            path {
+              fill: $color-light-blue;
+            }
+          }
+        }
+
+        #delete-btn {
+          svg {
+            path {
+              stroke: $color-light-blue;
+            }
+          }
+        }
+
+        button.rectangle {
+          border-radius: 4px;
+          padding: 5px 10px;
+          background: $color-white;
+          cursor: pointer;
+          border: .5px solid $color-light-blue;
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+
+          .button-label {
+            font-family: $font-family-main;
+            color: $color-light-blue;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            align-self: center;
+            margin-bottom: 2px;
+          }
+
+          svg {
+            fill: $color-light-blue;
+
+            path {
+              fill: $color-light-blue;
+            }
+          }
+        }
+      }
+    }
+
+    &.status {
+      .table--cell-inner {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        color: $color-cyan-blue-medium;
+        background: $color-primary-gray;
+        border-radius: 4px;
+        padding: 6px 8px;
+
+        span {
+          font-family: $font-family-main;
+          text-decoration: none;
+          outline: none;
+          cursor: default;
+          width: auto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 16px;
+          color: $color-cyan-blue-medium;
+        }
+      }
+    }
+
+    &.bold {
+      .table--cell-inner {
+        justify-content: flex-end;
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    &.action-buttons-cell {
+      padding: 0.75rem 0.75rem 0.75rem 0rem;
+
+      .table--cell-inner {
+        justify-content: flex-end;
+      }
+
+      .table--cell-inner>span {
+        .table--action-buttons {
+          align-items: baseline;
+
+          button {
+            margin: 5px;
+            cursor: pointer;
+
+            svg, span {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--row {
+    height: $row-height;
+
+    &:hover {
+      background-color: $color-primary-light-blue;
+
+      .table--action-buttons {
+        button.rectangle {
+          background: $color-primary-blue;
+
+          .button-label {
+            color: #FFFFFF;
+          }
+
+          svg {
+            fill: #FFFFFF;
+
+            path {
+              fill: #FFFFFF;
+            }
+          }
+        }
+
+        button.circle {
+          background: rgba(58, 132, 227, 0.08);
+
+          svg {
+            fill: $color-primary-blue;
+
+            path {
+              fill: $color-primary-blue;
+            }
+          }
+        }
+
+        #delete-btn {
+          svg {
+            path {
+              stroke: $color-primary-blue;
+            }
+          }
+        }
+      }
+    }
+
+    &-empty {
+      height: 94px;
+      width: 100%;
+
+      .table--cell {
+        padding: 2.75rem;
+        border-bottom: none;
+
+        &-inner {
+          font-family: $font-family-main;
+          color: $color-gray-8;
+          width: 100%;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1134px) {
+  .saved-orders {
+    .table--cell.action-buttons-cell {
+      .table--action-buttons {
+        justify-content: center;
+
+        .cirle-buttons-group {
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1134px) {
+  .saved-orders {
+    .table--cell {
+      vertical-align: top;
+    }
+  }
+}
+
+@media (max-width:1116px) {
+  .my-orders {
+    .table--cell {
+      vertical-align: top;
+    }
+  }
+}

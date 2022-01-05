@@ -1,0 +1,64 @@
+.Collapsible {
+  border: 1px solid $color-silver;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 15px;
+
+  &[activetrigger="customers"],
+  &[activetrigger="dsp"],
+  &[activetrigger="mirror"],
+  &[activetrigger="glass"],
+  &[activetrigger="lacobel"] {
+    border: 1px solid $color-primary-blue;
+  }
+
+  .Collapsible__contentInner {
+    .radio-option.active.radio-option.icon-button-large.active,
+    .radio-option.icon-button.active.radio-option {
+      border: 2px solid $color-primary-blue !important;
+      background-color: #f0f8ffd9;
+    }
+  }
+}
+
+.trigger {
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 6px;
+
+    &.open {
+      border-bottom: 1px solid $color-primary-blue;
+
+      >.trigger-check {
+        background-image: url("/src/client/assets/icons/fillingMaterials/trigger-checked.svg");
+      }
+    }
+  }
+
+  &-check {
+    height: 16px;
+    width: 16px;
+    margin-left: 16px;
+    background-image: url("/src/client/assets/icons/fillingMaterials/trigger-unchecked.svg");
+    background-size: contain;
+  }
+
+  &-image {
+    height: 18px;
+    width: 18px;
+    margin-left: 25px;
+  }
+
+  &-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 16px;
+    color: $color-primary-dark;
+  }
+}

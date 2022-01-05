@@ -1,0 +1,63 @@
+@import './variables.scss';
+@import './main.scss';
+
+@import './layout/header.scss';
+@import './layout/menu.scss';
+@import './layout/page.scss';
+
+@import './common/headings.scss';
+@import './common/paddings.scss';
+
+@import './components/modal.scss';
+@import './components/konva-visualisation.scss';
+@import './components/sticky-container.scss';
+@import './components/scrolling-container.scss';
+@import './components/filling-modal-footer.scss';
+@import './components/configurator-bottom-nav.scss';
+@import './components/sticky-menu.scss';
+@import './components/input.scss';
+@import './components/radio.scss';
+@import './components/tab-sections.scss';
+@import './components/dropdown.scss';
+@import './components/label.scss';
+@import './components/plus-minus-control.scss';
+@import './components/main-door.scss';
+@import './components/button.scss';
+@import './components/switch.scss';
+@import './components/checkbox.scss';
+@import './components/collapsible.scss';
+@import './components/filling-materials-modal.scss';
+@import './components/action-modal.scss';
+@import './components/localization.scss';
+@import './components/filling-materails-control.scss';
+@import './components/loader.scss';
+@import './components/zoom-visualisation.scss';
+@import './components/zoom-visualisation-modal.scss';
+@import './components/doors-navigation.scss';
+@import './components/configurator-footer.scss';
+@import './components/edit-order.scss';
+@import './components/table.scss';
+@import './components/table-mobile.scss';
+@import './components/breadcrumbs.scss';
+@import './components/text-area.scss';
+
+@import './pages/extendable-system-page.scss';
+@import './pages/monorail-system-page.scss';
+@import './pages/opening-system-page.scss';
+@import './pages/assembling-system-page.scss';
+@import './pages/order-page.scss';
+@import './pages/signin.scss';
+@import './pages/landing.scss';
+@import './pages/sign-in.scss';
+@import './pages/sign-up.scss';
+@import './pages/json-form.scss';
+@import './pages/forgot-password.scss';
+@import './pages/profile.scss';
+@import './pages/systems-choise.scss';
+@import './pages/tfa.scss';
+@import './pages/order-accepted.scss';
+@import './pages/my-orders.scss';
+
+@import './overrides/react-selectize.scss';
+
+@import '../../../node_modules/react-selectize/themes/index.css';

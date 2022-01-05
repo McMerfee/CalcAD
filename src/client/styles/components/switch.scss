@@ -1,0 +1,67 @@
+$toggle-width: 52px;
+$toggle-height: 28px;
+$toggle-gutter: 3px;
+$toggle-radius: 50%;
+$toggle-control-speed: .15s;
+$toggle-control-ease: ease-in;
+
+$toggle-radius: $toggle-height / 2;
+$toggle-control-size: $toggle-height - ($toggle-gutter * 2);
+
+.toggle-control {
+  width: 52px;
+  height: 28px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  input:checked ~ .control {
+    background-color: $color-primary-blue;
+
+    &:after {
+      left: $toggle-width - $toggle-control-size - $toggle-gutter;
+    }
+  }
+
+  .control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $toggle-height;
+    width: $toggle-width;
+    border-radius: $toggle-radius;
+    background-color: $color-lightsteelblue;
+    transition: background-color $toggle-control-speed $toggle-control-ease;
+    box-shadow: inset 0 0 16px rgba(0,0,0,.1);
+    cursor: pointer;
+    outline: none;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: $toggle-gutter;
+      top: $toggle-gutter;
+      width: 22px;
+      height: 22px;
+      border-radius: $toggle-radius;
+      background: $color-white;
+      transition: left $toggle-control-speed $toggle-control-ease;
+      box-shadow: 0 0 0 1px #fbfbfb, inset 1px 3px 6px rgba(0,0,0,.1);
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.3;
+    }
+  }
+}

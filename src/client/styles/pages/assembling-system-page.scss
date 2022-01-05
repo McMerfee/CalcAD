@@ -1,0 +1,22 @@
+.assembling-system-page {
+  background: $background-color-light-gray;
+  width: 100%;
+  height: 100%;
+
+  .page--main {
+    background: $background-color-light-gray;
+
+    &-inner {
+      min-height: auto;
+    }
+  }
+}
+
+@media (min-width: $max-mobile-width) {
+  .opening-system-page {
+    .page--main-inner {
+      min-height: 100vh;
+      height: auto;
+    }
+  }
+}

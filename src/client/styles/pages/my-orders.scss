@@ -1,0 +1,67 @@
+.my-orders,
+.saved-orders {
+  background: $color-primary-gray;
+  font-family: $font-family-main;
+  height: 100%;
+
+  &--title {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    font-family: $font-family-main;
+    padding: 0px 24px;
+  }
+
+  &--table-wrapper {
+    height: 100%;
+  }
+
+  .page--main {
+    background-color: $color-white;
+
+    &-inner {
+      background-color: $color-primary-gray;
+      display: flex;
+      flex-direction: column;
+      min-height: auto;
+      width: 100%;
+      padding: 70px 40px 40px;
+
+      .content-wrapper {
+        background-color: $color-primary-gray;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+
+        &-inner {
+          padding: 32px 0px 0px 0px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .my-orders .page--main,
+  .saved-orders .page--main {
+    height: auto;
+  }
+
+  .my-orders .page--main-inner,
+  .saved-orders .page--main-inner {
+    min-height: -webkit-fill-available;
+  }
+}
+
+@media (max-width: 550px) {
+  .my-orders .page--main-inner,
+  .saved-orders .page--main-inner {
+    padding: 70px 8px 20px 8px !important;
+    height: 100%;
+    min-width: 338px;
+  }
+}

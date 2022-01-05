@@ -1,0 +1,85 @@
+.react-selectize.root-node {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: $font-family-main;
+  position: relative;
+
+  &.open {
+    .react-selectize-control {
+      border: 1px solid $color-primary-blue !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .react-selectize-control {
+    width: 100%;
+    box-sizing: border-box;
+    position: initial;
+    border: 1px solid $color-lightsteelblue;
+    border-radius: 6px !important;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding-left: 0px;
+
+    &:nth-child(2) {
+      order: -2;
+    }
+
+    .react-selectize-search-field-and-selected-values {
+      width: calc(100% - 53px);
+
+      .value-wrapper {
+        width: calc(100% - 6px);
+      }
+    }
+
+    .react-selectize-toggle-button path {
+      fill: $color-primary-blue;
+    }
+
+    .react-selectize-placeholder {
+      position: absolute;
+    }
+
+    .react-selectize-reset-button-container {
+      svg > path {
+        stroke: $color-primary-blue;
+      }
+    }
+  }
+
+  .dropdown-menu-wrapper.bootstrap3.react-selectize.simple-select {
+    margin-top: -5px;
+    padding-top: 0;
+    padding-bottom: 5px;
+    z-index: 8001;
+    position: absolute;
+  }
+}
+
+.react-selectize.bootstrap3.root-node.simple-select {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.dropdown-menu-wrapper.bootstrap3.react-selectize.simple-select.glass-uvp-printing {
+  margin-bottom: 5px;
+  position: static !important;
+}
+
+.react-selectize.bootstrap3.root-node.simple-select.disabled {
+  cursor: not-allowed;
+
+  .react-selectize-control {
+    background-color: $background-color-light-gray;
+
+    .react-selectize-toggle-button {
+      path {
+        fill: $color-slategray;
+      }
+    }
+  }
+}

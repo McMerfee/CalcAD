@@ -1,0 +1,236 @@
+.scrolling-container {
+  font-family: $font-family-main;
+  z-index: 3000;
+
+  &--inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: $color-white;
+  }
+
+  .tab-content {
+    height: 100%;
+    padding: 10px 18px;
+
+    &--title-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0 10px 0;
+    }
+
+    &--title {
+      font-family: $font-family-main;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
+      color: $color-primary-dark;
+    }
+
+    &--action-buttons {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: rgba(58, 132, 227, 0.08);
+        border: none;
+        outline: none;
+
+        &:hover {
+          background: darken(rgba(58, 132, 227, 0.08), 10%);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+        }
+
+        &:nth-child(2) {
+          margin-left: 12px;
+        }
+
+        &:disabled {
+          background: $background-color-light-gray;
+          box-shadow: none;
+          cursor: not-allowed;
+
+          svg {
+            fill: $color-slategray;
+            path {
+              fill: $color-slategray;
+              stroke: $color-slategray;
+            }
+          }
+        }
+      }
+
+      button.circle {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+      }
+
+      button.rectangle {
+        border-radius: 4px;
+        padding: 5px 10px;
+
+        .button-label {
+          font-family: $font-family-main;
+          color: $color-primary-blue;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 16px;
+          display: flex;
+          align-self: center;
+        }
+
+        .button-label.disabled {
+          color: $color-slategray;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $max-mobile-width) {
+  .scrolling-container {
+    &--inner {
+      justify-content: space-between;
+    }
+
+    .tab-content {
+      &--title-wrapper {
+        display: none;
+      }
+    }
+  }
+
+  .tab-content {
+    height: 100%;
+    padding: 10px 18px;
+
+    &--title-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0 10px 0 24px;
+      height: 100%;
+
+      &.filling-desktop {
+        justify-content: flex-start !important;
+
+        .header--back-icon {
+          margin-bottom: 8px;
+
+          img {
+            outline: none;
+          }
+        }
+
+        .tab-content--title {
+          margin-left: 15px;
+        }
+      }
+    }
+
+    &--title {
+      font-family: $font-family-main;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24.5px;
+      color: $color-white;
+      height: 100%;
+      margin-top: 8px;
+    }
+
+    &--action-buttons {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+      margin-top: 3px;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: rgba(58, 132, 227, 0.08);
+        border: none;
+        outline: none;
+
+        svg {
+          fill: $color-white;
+          margin-top: 3px;
+
+          path {
+            fill: $color-white;
+          }
+        }
+
+        &:hover {
+          background: darken(rgba(58, 132, 227, 0.08), 10%);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+        }
+
+        &:nth-child(2) {
+          margin-left: 12px;
+        }
+
+        &:disabled {
+          background: $background-color-light-gray;
+          box-shadow: none;
+          cursor: not-allowed;
+
+          svg {
+            fill: $color-slategray;
+            path {
+              fill: $color-slategray;
+              stroke: $color-slategray;
+            }
+          }
+        }
+      }
+
+      button.circle {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        svg {
+          fill: $color-white;
+
+          path {
+            fill: $color-white;
+          }
+        }
+      }
+
+      button.rectangle {
+        border-radius: 4px;
+        padding: 5px 10px;
+        background: rgba(255, 255, 255, 0.08);
+        height: 34px;
+
+        .button-label {
+          font-family: $font-family-main;
+          color: $color-white;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 16px;
+          display: flex;
+          align-self: center;
+        }
+
+        .button-label.disabled {
+          color: $color-slategray;
+        }
+      }
+    }
+  }
+}

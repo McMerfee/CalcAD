@@ -1,0 +1,52 @@
+.main-tab,
+.main-section,
+.section {
+  &--item-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: default;
+
+    &-caption {
+
+      &-title {
+        font-size: 16px;
+        line-height: 16px;
+        font-family: $font-family-main;
+        color: $color-primary-dark;
+        margin: 0 0 8px 0;
+      }
+
+      &-subtitle {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 16px;
+        font-family: $font-family-main;
+        color: $color-slategray;
+        margin: 0;
+        animation: none;
+
+        button {
+          text-align: left;
+        }
+
+        &.highlighted {
+          color: $color-red;
+          animation: pulse-error-message 1s ease 1s alternate infinite;
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulse-error-message {
+  0% {
+    color: lighten($color-red, 15%);
+  }
+
+  50% {
+    color: darken($color-red, 4%);
+  }
+}

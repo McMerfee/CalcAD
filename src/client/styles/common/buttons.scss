@@ -1,0 +1,47 @@
+.large-button {
+  width: 100%;
+  max-width: 327px;
+  height: 48px;
+  border-radius: 36px;
+  font-family: $font-family-main;
+  font-size: 20px;
+  line-height: 20px;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-dark-blue;
+  }
+
+  &:disabled {
+    background-color: $color-primary-light-blue;
+  }
+
+  &-default {
+    background-color: $color-primary-blue;
+  }
+}
+
+.text-button {
+  font-family: $font-family-main;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+
+  &-gray {
+    color: $color-darkgray;
+
+    &:hover {
+      background-color: darken($color-darkgray, 10%);
+    }
+  }
+
+  &-blue {
+    color: $color-primary-blue;
+    text-decoration-line: underline;
+
+    &:hover {
+      background-color: $color-dark-blue;
+    }
+  }
+}

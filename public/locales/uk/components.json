@@ -1,0 +1,509 @@
+{
+  "routes": {
+    "sign-in": "Вхід в систему",
+    "sign-in-admin": "Адмін вхід в систему",
+    "sign-up": "Реєстрація",
+    "tfa": "Авторизація",
+    "system-choice": "Конструктор Замовлень",
+    "extendable-system": "Розсувна Система",
+    "monorail-system": "Монорельс",
+    "opening-system": "Відкривна Система",
+    "assembling-system": "Складальна Система",
+    "hinged-system": "Навісна Система",
+    "page-not-found": "Сторінка не знайдена",
+    "upload-json": "Адмін сторінка",
+    "order": "Замовлення",
+    "reset-password": "Відновити пароль",
+    "profile": "Особистий кабінет",
+    "order-accepted": "Замовлення оформлено",
+    "my-orders": "Мої замовлення",
+    "saved-orders": "Збережені проекти"
+  },
+  "errorMessages": {
+    "empty-value": "Пусте значення",
+    "invalid-value": "Некоректне значення",
+    "invalid-email": "Некорректна електронна пошта",
+    "invalid-name": "Очікується від 2 до 30 букв",
+    "invalid-address": "Очікується від 6 до 40 сиволів",
+    "invalid-phone-number": "Очікується номер у форматі 0YYXXXXXXX",
+    "invalid-password": "Очікується пароль від 6 до 30 символів",
+    "password-doesnt-match": "Пароль не співпадає",
+    "file-is-too-large": "Файл завеликий",
+    "please-compress-file": "Будь ласка, зробіть .zip архів",
+    "failed-uploading-file": "Помилка загрузки файла",
+    "filling-is-missing": "Виберіть матеріали наповнення, будь ласка",
+    "something-went-wrong": "Вибачте, щось пішло не так. Будь ласка, спробуйте пізніше."
+  },
+  "successMessages": {
+    "file-uploaded-successfully": "Дані успішно завантажені",
+    "data-updated-successfully": "Дані успішно збережені",
+    "section-merged-successfully": "Секція успішно видалена",
+    "section-copied-successfully": "Секція успішно скопійована"
+  },
+  "warningMessages": {
+    "please-disable-popup-blocker": "Будь ласка, вимкніть блокувальник спливаючих вікон",
+    "please-add-filling-materials": "Будь ласка, виберіть матеріали наповнення",
+    "price-has-changed": "Попередня ціна: {{prevPrice}} грн. Актуальна ціна: {{currentPrice}} грн."
+  },
+  "errorMessagesHelper": {
+    "USER_NOT_FOUND": "Користувач не знайдений",
+    "USER_ALREADY_EXISTS": "Користувач вже існує",
+    "INVALID_JSON_DATA": "Некоректні дані JSON файла",
+    "FILE_NOT_FOUND": "Файл не знайдено",
+    "PERMISSION_DENIED": "Дозвіл відмовлено",
+    "INVALID_TOKEN": "Некоректний токен",
+    "ZIP_NOT_FOUND": "ZIP не знайдено",
+    "ERROR_UPDATING_ORDER": "Помилка при оновленні замовлення",
+    "ERROR_REMOVING_ORDER": "Помилка видалення замовлення",
+    "COPY_ORDER_FAILURE": "Помилка копіювання замовлення",
+    "PUT_INTO_WORK_FAILURE": "Помилка підтвердження замовлення",
+    "ORDER_NOT_FOUND": "Замовлення не знайдено",
+    "BAD_REQUEST": "Неправильний запит",
+    "INCORRECT_LOGIN_OR_PASSWORD": "Некоректний логін або пароль",
+    "INCORRECT_PASSWORD": "Некоректний пароль",
+    "VERIFICATION_CODE_IS_INVALID": "Код підтвердження не валідний"
+  },
+  "header": {
+    "profile": "Особистий кабінет",
+    "configurator": "Конструктор замовлень",
+    "orders": "Мої замовлення",
+    "saved-orders": "Збережені проекти",
+    "data-editing": "Редагування даних",
+    "json-uploading": "Адмін сторінка"
+  },
+  "extendableSystem": {
+    "basic": "ОСНОВНІ",
+    "door-n": "ДВЕРІ {{number}}"
+  },
+  "monorailSystem": {
+    "basic": "ОСНОВНІ",
+    "door-n": "ДВЕРІ {{number}}"
+  },
+  "openingSystem": {
+    "basic": "ОСНОВНІ",
+    "door-n": "ДВЕРІ {{number}}"
+  },
+  "assemblingSystem": {
+    "basic": "ОСНОВНІ",
+    "door-n": "ДВЕРІ {{number}}"
+  },
+  "hingedSystem": {
+    "basic": "ОСНОВНІ",
+    "door-n": "ДВЕРІ {{number}}"
+  },
+  "copyDoorModal": {
+    "door-n": "Двері {{number}} -",
+    "apply-to": "Застосувати до",
+    "door": "ДВЕРІ",
+    "copy": "Копіювати",
+    "copy-settings": "скопіювати налаштування:",
+    "cancel": "Відміна",
+    "apply": "Застосувати"
+  },
+  "fillingMaterialsModal": {
+    "customers": "Матеріал замовника",
+    "dsp": "ДСП",
+    "mirror": "Дзеркало",
+    "lacobel": "Лакобель",
+    "glass": "Скло",
+    "filling-choice": "Вибір наповнення",
+    "milling": "Фрезерування",
+    "choose-manufacturer": "Вибрати виробника",
+    "uv-print": "Ультрафіолетовий друк",
+    "choose-type": "Вибрати тип",
+    "search-by-name-or-article": "Пошук за назвою або артикулу",
+    "stencil-matting": "Матування за трафаретом",
+    "rear-matting": "Тильне матування",
+    "full-matting": "Повне матування",
+    "stencil-painting": "Фарбування за трафаретом",
+    "choose": "Вибрати",
+    "armored-film": "Бронь плівка",
+    "white-lamination": "Ламінування білою плівкою",
+    "painting-in-one-colors": "Фарбування в один колір",
+    "painting-in-two-colors": "Фарбування в два кольори за трафаретом",
+    "photo-print-on-cover": "Фотодрук на плівці",
+    "main-filling": "Для всієї системи",
+    "door-n": "Двері {{doorNumber}}",
+    "section-n": "Секція {{doorNumber}}.{{sectionNumber}}",
+    "clear-filling": "Очистити наповнення"
+  },
+  "mergeSectionModal": {
+    "copy": "Видалити секцію",
+    "merge-section": "Об'єднати секцію:",
+    "cancel": "Відміна",
+    "delete": "Видалити"
+  },
+  "deleteDoorModal": {
+    "title": "Видалити двері №{{doorNumber}}?",
+    "subtitle": "Двері будуть видалені",
+    "cancel": "Відміна",
+    "submit": "Видалити"
+  },
+  "deleteSectionModal": {
+    "title": "Видалити секцію №{{sectionNumber}}?",
+    "subtitle": "Cекція буде видалена",
+    "cancel": "Відміна",
+    "submit": "Видалити"
+  },
+  "copySectionModal": {
+    "section-n": "Cекція {{doorNumber}}.{{sectionNumber}} -",
+    "apply-to": "Застосувати до",
+    "section": "СЕКЦІЯ",
+    "copy": "Копіювати",
+    "copy-settings": "скопіювати налаштування:",
+    "cancel": "Відміна",
+    "apply": "Застосувати"
+  },
+  "putOrderIntoWorkModal": {
+    "title": "Віддати в роботу проект №{{orderNumber}}?",
+    "subtitle": "Менеджер отримає замовлення і зв'яжеться з вами найближчим часом.",
+    "delivery-type": "Тип доставки",
+    "city-label": "Місто",
+    "city-search": "Пошук міста доставки",
+    "office-label": "Відділення",
+    "office-search": "Пошук відділеннь самовивозу",
+    "address-label": "Адреса",
+    "address-placeholder": "Напишіть адресу доставки",
+    "comment-label": "Коментар",
+    "comment-placeholder": "При необхідності залишіть коментар для менеджера",
+    "cancel": "Відмінити",
+    "submit": "Завершити"
+  },
+  "saveOrderModal": {
+    "general": {
+      "placeholder": "Назва проекту (Не обов'язково)",
+      "cancel": "Відмінити"
+    },
+    "mobile": {
+      "title": "Зберегти",
+      "subtitle": "Додайте назву проекту",
+      "submit": "Зберегти"
+    },
+    "desktop": {
+      "title": "Введіть, будь ласка, назву проекту або ім'я клієнта",
+      "submit": "Зберегти проект"
+    }
+  },
+  "leavePageModal": {
+    "title": "Бажаєте зберегти зміни?",
+    "subtitle": "Будь ласка, збережіть зміни перш ніж залишати сторінку.",
+    "order-title": "Назва проекту",
+    "cancel": "Відмінити",
+    "do-not-save": "Не зберігати",
+    "submit": "Зберегти"
+  },
+  "deleteOrderModal": {
+    "title": "Видалити замовлення №{{orderNumber}}?",
+    "subtitle": "Замовлення буде видалено зі збережених проектів",
+    "cancel": "Відмінити",
+    "submit": "Видалити"
+  },
+  "copyOrderModal": {
+    "title": "Скопіювати замовлення №{{orderNumber}}?",
+    "subtitle": "Замовлення буде скопійовано в збережені проекти.",
+    "order-title": "Введіть будь ласка назву проекту або ім'я клієнта.",
+    "order-title-placeholder": "Назва проекту",
+    "cancel": "Відмінити",
+    "submit": "Скопіювати"
+  },
+  "stickyMenu": {
+    "footer": {
+      "process": "Продовжити",
+      "save": "Зберегти"
+    },
+    "bottomNavPanel": {
+      "door-n": "Двері {{number}}",
+      "save-project": "Зберегти проект"
+    },
+    "desktop": {
+      "main-params": "Основні параметри",
+      "filling": "Вибір наповнення"
+    },
+    "door": {
+      "door": "Двері ",
+      "copy": "Копіювати"
+    },
+    "mainDoorTab": {
+      "aperture-height": "Висота проєму, мм",
+      "aperture-width": "Ширина проєму, мм",
+      "from-min-to-max": "(від {{min}} до {{max}})",
+      "min-or-max": "({{min}} або {{max}})",
+      "monorail-door-width": "Ширина дверей, мм",
+      "sidewall-thickness": "Товщина боковини, мм",
+      "x2Profile": "Ходовий профіль",
+      "x4Profile": "Направляючий профіль",
+      "number-of-doors": "Кількість дверей",
+      "door-layout": "Схема розміщення дверей",
+      "side-profile": "Боковий профіль",
+      "choose-profile": "Вибрати профіль",
+      "aluminum-profile-color": "Колір алюмінієвого профілю",
+      "mechanism": "Механізм",
+      "choose-mechanism": "Вибрати механізм",
+      "stopper": "Стопор",
+      "opening-side": "Сторона відкривання",
+      "filling-material": "Матеріал наповнення",
+      "texture": "Текстура",
+      "middle-door-mechanism": "Дотяг на середні двері",
+      "no-available-aluminum-profiles": "Нет доступных алюминиевых профилей"
+    },
+    "mainSectionTab": {
+      "door-latch-mechanism": "Дотяг",
+      "filling-material": "Матеріал наповнення",
+      "number-of-sections": "Кількість секцій",
+      "amount": "(від {{minSectionsAmount}} до {{maxSectionsAmount}})",
+      "sectioning-direction": "Напрямок поділу на секції",
+      "connecting-profile": "З'єднувальний профіль",
+      "choose-profile": "Вибрати профіль",
+      "door-assembly": "Збірка дверей"
+    },
+    "section": {
+      "section": "Секція ",
+      "visible-height": "Видима висота, мм",
+      "align-height": "Вирівняти по висоті",
+      "visible-width": "Видима ширина, мм",
+      "align-width": "Вирівняти по ширині",
+      "filling-material": "Матеріал наповнення"
+    },
+    "sectionSwitcher": {
+      "main": "Основна",
+      "add-section": "Додати секцію"
+    }
+  },
+  "fillingMaterialsControl": {
+    "choose": "Вибрати",
+    "change": "Змінити"
+  },
+  "signIn": {
+    "password": "Пароль",
+    "sign-in": "Вхід",
+    "sign-in-admin": "Адмін вхід",
+    "to-sign-in": "Увійти",
+    "phone": "Телефон",
+    "phone-number-format": "0YYXXXXXXX",
+    "email": "Електронна пошта",
+    "no-account": "Немає аккаунту?",
+    "sign-up": "Зареєструватися",
+    "forgot-password": "Забули пароль?",
+    "reset-password": "Відновити пароль"
+  },
+  "signUp": {
+    "title": "Зареєструватися",
+    "sign-up": "Зареєструватися",
+    "to-sign-in": "Увійти",
+    "proceed": "Продовжити",
+    "already-have-account": "Вже зареєстровані?",
+    "first-name": "Ваше ім'я",
+    "last-name": "Прізвище",
+    "region": "Регіон",
+    "phone": "Телефон",
+    "phone-number-format": "0YYXXXXXXX",
+    "password": "Пароль",
+    "repeat-password": "Повторити пароль",
+    "by-clicking-you-accept-the-terms": "Натискаючи кнопку «Зареєструватися», Ви приймаєте умови ",
+    "of-user-agreement": "Користувальницької угоди."
+  },
+  "tfa": {
+    "auth": "Авторизація",
+    "hint-section": "На ваш номер відправлено повідомлення з кодом, будь ласка введіть його в поле нижче",
+    "confirm": "Підтвердити",
+    "code": "Код СМС повідомлення",
+    "send-confirmation-again": "Відправити код ще раз?",
+    "go-to-registration": "Повернутись до реєстрації"
+  },
+  "jsonForm": {
+    "orders-info": "Інформація про замовлення",
+    "orders-count-total": "Загальна кількість замовлень",
+    "orders-count-new": "Кількість нових проектів",
+    "orders-count-in-processing": "Кількість замовлень, відданих в роботу",
+    "users-count-with-new-orders": "Кількість користувачів, які зберегли проекти",
+    "users-count-with-in-processing-orders": "Кількість користувачів, які відправили замовлення в роботу",
+    "upload-json-files": "Завантаження JSON файлів",
+    "1с-orders-exchange": "Обмін замовленнями з 1С",
+    "1с-orders-exchange-raw": "Вивантаження розширених даних по замовленнях",
+    "1с-orders-set-exchanged": "Встановлення помітки успішного обміну замовленнями",
+    "1с-system-constants-exchange": "Обмін коефіцієнтів з 1С",
+    "1с-delivery-exchange": "Обмін типами доставки з 1С",
+    "file-with-items-list-and-price-list": "Файл з номенклатурою та цінами",
+    "compress-huge-file": "Якщо файл більший ніж 20МБ, заархівуйте його в .zip архів",
+    "file-with-customers": "Файл з контрагентами",
+    "submit": "Застосувати",
+    "clear": "Очистити",
+    "uploaded": "Завантажено",
+    "invalid-phone-numbers": "Не валідні тел. номери",
+    "nonunique-phone-numbers": "Не уникальні тел. номери",
+    "file-path": "ШЛЯХ_ДО_ФАЙЛА",
+    "instruction-to-upload-json": "Для завантаження JSON файлів скопіюйте рядок запита, замінивши ШЛЯХ_ДО_ФАЙЛА, вставте в термінал та натисніть Enter",
+    "instruction-to-upload-items-list-zip": "Для завантаження ZIP файла з номенклатурою скопіюйте наступний рядок, замінивши ШЛЯХ_ДО_ФАЙЛА, вставте в термінал та натисніть Enter",
+    "instruction-to-load-orders-by-region": "Для вигрузки замовлень, відданих в роботу, скопіюйте рядок на вибір в залежності від регіону, вставте в термінал та натисніть Enter",
+    "example": "Приклад"
+  },
+  "regions": {
+    "lviv": "Львів",
+    "kyiv": "Київ",
+    "kharkiv": "Харків",
+    "odesa": "Одеса"
+  },
+  "forgotPassword": {
+    "repeat-password": "Повторити пароль",
+    "phone": "Телефон",
+    "submit": "Підтвердити",
+    "send-code": "Відправити код",
+    "phone-number-format": "0YYXXXXXXX",
+    "code": "Код СМС повідомлення",
+    "setup-password": "Відновлення паролю",
+    "successfully-reset-password": "Пароль успішно відновлено",
+    "password": "Пароль",
+    "code-has-been-sent": "На номер: {{phoneNumber}} відправлено код"
+  },
+  "profile": {
+    "greeting": "Вітаємо",
+    "contact-info": "Контактна інформація",
+    "first-name": "Ім'я: ",
+    "last-name": "Прізвище: ",
+    "phone": "Телефон: ",
+    "phone-number-format": "0YYXXXXXXX",
+    "edit": "Редагувати",
+    "cancel": "Cкасувати",
+    "submit": "Зберегти",
+    "delivery-by-default": "Доставка по замовчуванню"
+  },
+  "systemsChoise": {
+    "choose-one-of": "Виберіть один із варіантів системи",
+    "extendable": "Розсувна",
+    "opening": "Відкривна",
+    "suspended": "Підвісна",
+    "assembling": "Складальна",
+    "monorail": "Монорельс",
+    "hinged": "Навісна",
+    "frame-facades": "Рамкові фасади"
+  },
+  "editOrder": {
+    "project": "Проект",
+    "new-order": "Новий Проект",
+    "download-specification": "Загрузити специфікацію",
+    "specification": "Специфікація",
+    "show-visualisation": "Подивитися візуалізацію",
+    "please-check-params": "Перевірте характеристики перед замовленням",
+    "confirm": "Оформити",
+    "cost": "Вартість",
+    "basic": "Основні",
+    "door-n": "Двері {{number}}",
+    "section-n": "Секція {{doorNumber}}.{{sectionNumber}}",
+    "extendable": "Розсувна",
+    "system-type": "Тип системи",
+    "door-opening-height": "Висота проєму",
+    "door-opening-width": "Ширина проєму",
+    "door-height": "Висота дверей",
+    "door-width": "Ширина дверей",
+    "filling-size": "Розмір наповнення",
+    "visible-filling-size": "Видимий розмір наповнення",
+    "door-amount": "Кількість дверей",
+    "door-positioning-scheme": "Схема розміщення",
+    "side-profile": "Боковий профіль",
+    "profile-color": "Колір профілю",
+    "mechanism": "Механізм",
+    "stopper": "Стопор",
+    "sidewall-thickness": "Товщина боковини",
+    "opening-side": "Сторона відкривання",
+    "door-latch-mechanism": "Дотяг",
+    "door-latch-mechanism-position": "Розташування дотягу",
+    "connecting-profile": "З'єднув. профіль",
+    "connecting-profile-color": "Колір з'єднув. профілю",
+    "sections-direction": "Напрямок поділу на секції",
+    "section-height": "Висота секції",
+    "section-width": "Ширина секції",
+    "section-filling": "Матеріал",
+    "section-texture": "Текстура",
+    "choose-region": "Вибрати регіон"
+  },
+  "landing": {
+    "title": "ADS - там де скло та алюміній",
+    "advantages": "Переваги конструктора",
+    "advantage-1": "самостійний, швидкий прорахунок замовлень в будь-який зручний час",
+    "advantage-2": "можливість зберегти прорахунок замовлення",
+    "advantage-3": "економія Вашого робочого часу",
+    "advantage-4": "перегляд історії замовлень",
+    "advantage-5": "відслідковування новинок від компанії «ADS»",
+    "start": "Почати",
+    "sign-up": "Зареєструватися",
+    "sign-in": "Увійти",
+    "logout": "Вийти"
+  },
+  "orderAccepted": {
+    "your-order-number": "Ваше замовлення №{{orderNumber}}",
+    "accepted": "оформлене",
+    "manager-received-order": "Менеджер отримав замовлення та зв'яжеться з вами в найближчий час.",
+    "new-order": "Нове замовлення",
+    "view": "Подивитися",
+    "my-orders": "Мої замовлення"
+  },
+  "myAcceptedOrders": {
+    "my-orders": "Мої замовлення",
+    "order": "Замовлення",
+    "client": "Клієнт",
+    "system-type": "Тип системи",
+    "date": "Дата",
+    "retail": "Роздріб",
+    "saving": "Eкономія",
+    "sum": "Зі знижкою",
+    "status": "Статус",
+    "actions": "Дії",
+    "put-into-work": "Віддано в роботу",
+    "view": "Переглянути",
+    "no-orders": "Немає замовлень",
+    "loading": "Завантаження..."
+  },
+  "mySavedOrders": {
+    "saved-orders": "Збережені проекти",
+    "order": "Проект",
+    "client": "Клієнт",
+    "system-type": "Тип системи",
+    "date": "Дата",
+    "retail": "Роздріб",
+    "saving": "Eкономія",
+    "sum": "Зі знижкою",
+    "put-into-work": "Віддати в роботу",
+    "no-orders": "Немає збережених проектів",
+    "loading": "Завантаження..."
+  },
+  "table": {
+    "no-data": "Немає даних",
+    "copy-project": "Копіювати проект",
+    "rename-project": "Змінити назву проекту",
+    "delete-project": "Видалити проект",
+    "edit-project": "Редагувати проект",
+    "open-specification": "Відкрити специфікацію"
+  },
+  "breadcrumbs": {
+    "system-type": "Тип системи",
+    "extendable": "Розсувна Система",
+    "monorail": "Монорельс",
+    "opening": "Відкривна Система",
+    "assembling": "Складальна Система",
+    "hinged": "Навісна Система",
+    "order-process": "Перегляд проекту"
+  },
+  "tooltips": {
+    "door-layout": "Шахматне або симетричне розташування дверей (впливає на ширину дверей)",
+    "side-profile": "Бокова ручка у дверях для шафи-купе",
+    "aluminum-profile-color": "Гама кольорів, які використовуються для виробів",
+    "mechanism": "Ролики (верхні та нижні)",
+    "filling-material": "Скло – 4 мм; ДСП – 10 мм",
+    "door-latch-mechanism": "Це механізм, що здійснює плавне закривання дверей",
+    "texture": "Напрямок розташування деревоподібних волокон",
+    "connecting-profile": "Алюмінієвий профіль, що служить з’єднанням двох частин наповнення",
+    "door-assembly": "Здійснення / нездійснення збирання дверей"
+  },
+  "ordersStatuses": {
+    "new": "Збережено",
+    "in-processing": "На опрацюванні",
+    "processed-and-available-for-payment": "Опрацьовано, доступний для оплати",
+    "clarification-of-order-parameters": "Уточнення з менеджером параметрів замовлення",
+    "clarification-of-order-components": "Уточнення з менеджером комплектуючих",
+    "launched-in-work": "Запущено в роботу",
+    "manufactured-in-lviv": "Замовлення виготовлено (Виробництво м. Львів)",
+    "available-at-the-delivery-point": "Доступний у точці видачі",
+    "dispatched": "Відвантажено",
+    "declined": "Замовлення скасовано"
+  }
+}

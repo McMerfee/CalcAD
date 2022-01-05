@@ -1,0 +1,127 @@
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(51, 88, 135, 0.6);
+  width: 100%;
+  height: calc(100% - 80px);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 8000;
+  font-family: $font-family-main;
+
+  &.open {
+    display: flex;
+  }
+
+  &.bottom {
+    align-items: flex-end;
+
+    >.modal-wrapper {
+      width: 100%;
+      max-width: initial;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      height: calc(100% - 35px);
+    }
+
+    .modal-inner-children {
+      padding: 35px 24px 7px;
+    }
+  }
+
+  &-wrapper {
+    position: relative;
+    border-radius: 24px;
+    background: $color-white;
+    box-shadow: 0px -8px 16px rgba(65, 100, 143, 0.03);
+    max-width: 340px;
+    width: 340px;
+    min-height: 300px;
+    height: auto;
+    min-height: 264px;
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    background-color: $color-white;
+    z-index: 3000;
+
+    &-button {
+      margin: 15px 15px 8px 15px;
+      width: 22px;
+      height: 22px;
+      position: relative;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      outline: none;
+
+      &:hover {
+        border-radius: 50%;
+        background: lighten($color-light-blue, 15%);
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+      }
+
+      &-cross {
+        position: relative;
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        opacity: 1;
+        left: 1px;
+      }
+
+      &-cross:before, &-cross:after {
+        position: absolute;
+        content: ' ';
+        height: 18px;
+        width: 2px;
+        background-color: $color-primary-blue;
+      }
+
+      &-cross:before {
+        transform: rotate(45deg);
+      }
+
+      &-cross:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@media (min-width:$max-mobile-width) {
+  .modal {
+    &-wrapper {
+      width: 640px;
+      max-width: 640px;
+      height: 63%;
+
+      .react-selectize.bootstrap3.root-node.simple-select {
+        width: 320px;
+      }
+    }
+  }
+
+  .modal.open {
+    height: 100%;
+  }
+}

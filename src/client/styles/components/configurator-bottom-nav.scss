@@ -1,0 +1,72 @@
+.configurator-bottom-nav {
+  border-top: 1px solid $border-light-gray;
+  font-family: $font-family-main;
+  background: $color-white;
+  height: 84px;
+  width: 100%;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+
+  &--inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &--action-link {
+    width: 55%;
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: $color-slategray;
+    cursor: not-allowed;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &--next-button {
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $color-primary-blue;
+    cursor: pointer;
+    outline: none;
+    margin-right: 18px;
+
+    &.disabled {
+      color: $color-slategray;
+    }
+  }
+
+  &--next-icon {
+    margin-left: 11px;
+
+    &.disabled {
+      rect {
+        stroke: $color-slategray;
+      }
+
+      path {
+        fill: $color-slategray;
+      }
+    }
+  }
+}
+
+@media (min-width:$max-mobile-width) {
+  .configurator-bottom-nav {
+    margin-bottom: 0px;
+  }
+}

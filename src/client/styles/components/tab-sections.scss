@@ -1,0 +1,164 @@
+.tab-sections {
+  margin: 18px 0px;
+
+  &--inner {
+    border: 1px solid $color-silver;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  &--head {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    height: 44px;
+    overflow-x: scroll;
+
+    .tab-section {
+      width: 50%;
+      padding-bottom: 5px;
+      margin: 0;
+      cursor: pointer;
+      text-decoration: none;
+      outline: none;
+      font-family: $font-family-main;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 19px;
+      color: $color-primary-dark;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $color-primary-gray;
+      border: 1px solid $color-silver;
+      border-radius: 4px 4px 0px 0px;
+
+      span {
+        margin-top: 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+    }
+
+    .tab-section.active {
+      border: none;
+      border-top: 3px solid $color-primary-blue;
+      color: $color-primary-blue;
+      background: $color-white;
+    }
+
+    .tab-section.add-button {
+      background: $color-primary-blue;
+      border-radius: 4px 4px 0px 0px;
+      color: $color-white;
+      width: 100%;
+      border: 1px solid $color-primary-blue;
+
+      img {
+        margin: 6px 8px 0px 8px;
+      }
+    }
+
+    .tab-section.add-button.small {
+      width: 30px;
+    }
+  }
+
+  .section-content {
+    height: 100%;
+    padding: 24px 18px;
+
+    &--title-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    &--title {
+      font-family: $font-family-main;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      color: $color-primary-dark;
+    }
+
+    &--action-buttons {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: rgba(58, 132, 227, 0.08);
+        border: none;
+        outline: none;
+
+        &:hover {
+          background: darken(rgba(58, 132, 227, 0.08), 10%);
+          box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+        }
+
+        &:nth-child(2) {
+          margin-left: 14px;
+        }
+
+        &:disabled {
+          background: $background-color-light-gray;
+          box-shadow: none;
+          cursor: not-allowed;
+
+          svg {
+            fill: $color-slategray;
+            path {
+              fill: $color-slategray;
+              stroke: $color-slategray;
+            }
+          }
+        }
+      }
+
+      button.circle {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    .section,
+    .main-section {
+      &--column {
+        margin: 0px 0px 15px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      &--row {
+        margin: 7px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      &--row-space-between {
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .section-content.main-section {
+    padding: 20px 18px 0px 18px;
+  }
+}
