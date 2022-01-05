@@ -5,6 +5,8 @@ module.exports = {
     es6: true,
     node: true,
     jest: true,
+    RemotePlayback
+    VASYL
   },
   extends: [
     'airbnb',
